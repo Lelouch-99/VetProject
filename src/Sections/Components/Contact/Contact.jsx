@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import image2 from '../../../IMG/image2.jpg'
-import axios from 'axios';
 import './Contact.css'
 
 const Contact = () => {
