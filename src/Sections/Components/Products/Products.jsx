@@ -21,7 +21,7 @@ const Products = () => {
       >
         <div>
           <div className='ProductsDescription'>
-            <a href="#" className="ProductsDescriptionLink">
+            <a href="#home" className="ProductsDescriptionLink">
              <h3>ALIMENTOS PARA MASCOTAS</h3>
             </a>
           </div>
@@ -29,7 +29,7 @@ const Products = () => {
         </div>
         <div>
           <div className='ProductsDescription'>
-            <a href="#" className="ProductsDescriptionLink">
+            <a href="#home" className="ProductsDescriptionLink">
              <h3>ACCESORIOS PARA MASCOTAS</h3>
             </a>
           </div>
