@@ -1,0 +1,88 @@
+/* Service.css */
+.service-container {
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to right,rgb(236, 168, 253) 20%,#fff 20%);
+  padding: 5rem;
+}
+
+.accordion-item {
+  border: 1px solid #dfabf5;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.accordion-header {
+  background-color: #d9abf8;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.accordion-body {
+  padding: 1rem;
+}
+.image-container {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.service-image {
+  height: 650px;
+  width: 950px ;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lista{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  color: #6a6a6a; /* color rosa */
+  line-height: 50px;
+  margin-bottom: 8px; /* separación entre elementos */
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.lista:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.lista:nth-child(even) {
+  animation-delay: 0.4s;
+}
+@media (max-width: 767px) {
+  .service-container {
+    flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+    padding: 2rem; /* Reducir el padding en dispositivos móviles */
+  }
+
+  .image-container {
+    margin-bottom: 2rem; /* Agregar margen inferior en dispositivos móviles */
+  }
+
+  .service-image {
+    height: 300px; /* Reducir la altura de la imagen en dispositivos móviles */
+    width: auto;
+  }
+
+  .lista {
+    line-height: 30px; /* Reducir el interlineado en dispositivos móviles */
+  }
+}
+
+  

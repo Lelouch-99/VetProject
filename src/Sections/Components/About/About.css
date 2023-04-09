@@ -1,0 +1,39 @@
+.about-container {
+    width: 100%;
+    padding: 4rem;
+    margin: 0;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background-image: linear-gradient(90deg,  #ebaeff 10%,   #fff 10%);
+    opacity: 1;
+  }
+  
+  .full-width-text {
+    width: 100%;
+    padding: 15rem;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .tittle{
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d980f7;
+  }
+  .texto{
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+  }
+  @media (max-width: 765px) {
+    .full-width-text {
+      padding: 3rem; /* Reducir el padding en dispositivos móviles */
+    }
+  
+    .tittle {
+      font-size: 1.5rem; /* Reducir el tamaño de fuente del título en dispositivos móviles */
+    }
+  
+    .texto {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 0.9rem; /* Reducir el tamaño de fuente del texto en dispositivos móviles */
+    }
+  }
