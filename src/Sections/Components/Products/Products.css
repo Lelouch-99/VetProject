@@ -33,9 +33,11 @@
   @media (max-width: 765px) {
     .products-container {
       padding: 2rem; /* Reducir el padding en dispositivos móviles */
+      height: 710px;
     }
   
     .image {
+      margin-top: 100px;
       height: 250px; /* Reducir la altura de la imagen en dispositivos móviles */
     }
   

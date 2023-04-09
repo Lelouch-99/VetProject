@@ -28,7 +28,7 @@
 /* Estilos específicos para pantallas pequeñas (móviles) */
 @media (max-width: 765px) {
   .carousel-item {
-    height: 500px; /* Reducir la altura del carrusel en dispositivos móviles */
+    height: 720px; /* Reducir la altura del carrusel en dispositivos móviles */
   }
 
   .eslogan {

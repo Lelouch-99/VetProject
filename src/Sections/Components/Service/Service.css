@@ -69,6 +69,7 @@
   .service-container {
     flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
     padding: 2rem; /* Reducir el padding en dispositivos móviles */
+    height: 710px;
   }
 
   .image-container {

@@ -25,10 +25,12 @@
   @media (max-width: 765px) {
     .full-width-text {
       padding: 3rem; /* Reducir el padding en dispositivos móviles */
+      height: 710px;
     }
   
     .tittle {
       font-size: 1.5rem; /* Reducir el tamaño de fuente del título en dispositivos móviles */
+    
     }
   
     .texto {
