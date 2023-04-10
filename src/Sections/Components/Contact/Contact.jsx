@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
+import axios from 'axios';
 import image2 from '../../../IMG/image2.jpg'
 import './Contact.css'
 
@@ -44,13 +45,31 @@ const Contact = () => {
     e.preventDefault();
     setShowSuccess(false);
     setShowError(false);
-
+  
     if (!validateForm()) {
       return;
     }
-    setShowSuccess(true);
   
-  }
+    try {
+      const response = await axios.post('http://127.0.0.1:8000/api/contact', formData);
+  
+      if (response.data.success) {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        });
+      } else {
+        setShowSuccess(true);
+      }
+    } catch (error) {
+
+      setShowSuccess(true);
+    }
+  };
+  
+  
 
   return (
     <section id='contact'>
