@@ -51,7 +51,7 @@ const Contact = () => {
     }
   
     try {
-      const response = await axios.post('https://vetback-production-6fac.up.railway.apps/api/contact',formData);
+      const response = await axios.post('https://https:/vetback-production.up.railway.app/api/contact',formData);
   
       if (response.data.success) {
         setFormData({
